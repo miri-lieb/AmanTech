@@ -10,7 +10,7 @@
     <div class="page-shell">
       <header class="topbar">
         <div class="brand" aria-label="Brand icon">
-          <img src="image-removebg-preview.png" alt="Sigint Ops logo"/>
+          <img src="image-removebg-preview.png" alt="Sigint Ops logo" />
         </div>
 
         <div class="title">SIGINT OPS</div>
@@ -47,18 +47,98 @@
             </div>
           </div>
         </div>
-        <div>
-            <button>
-                New Biref
-            </button>
-            <button>
-                Decode
-            </button>
-            <button>
-                Request Drone
-            </button>
-          </div>
+
+        <div class="action-row" aria-label="Primary actions">
+          <button class="action-btn" type="button">
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 15.5L14.5 6H9V4h9v9h-2V8.5L8.5 18H5v-2.5Z"/>
+              </svg>
+            </span>
+            <span>New Brief</span>
+          </button>
+
+          <button class="action-btn" type="button">
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5.5 3.5 12 9 18.5M15 5.5 20.5 12 15 18.5M13.5 3.5l-3 17"/>
+              </svg>
+            </span>
+            <span>Decode</span>
+          </button>
+
+          <button class="action-btn" type="button">
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 16.5h8M7 7.5h10M8.5 4.5h7l2.5 3v9.5c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2V7.5l2.5-3Zm2.5 12.5v2m4-2v2"/>
+              </svg>
+            </span>
+            <span>Request Drone</span>
+          </button>
+        </div>
+
+        <div class="task-grid" aria-label="Operations overview">
+          <article class="task-card critical">
+            <div class="task-header">
+              <span class="task-tag">CRITICAL</span>
+              <span class="task-status">In Progress</span>
+            </div>
+            <h3>Operation Nightfall</h3>
+            <div class="progress"><span style="width: 65%"></span></div>
+            <div class="progress-meta"><span>65%</span></div>
+          </article>
+
+          <article class="task-card warning">
+            <div class="task-header">
+              <span class="task-tag">HIGH</span>
+              <span class="task-status">Analyzing</span>
+            </div>
+            <h3>Signal Intercept Alpha</h3>
+            <div class="progress"><span style="width: 40%"></span></div>
+            <div class="progress-meta"><span>40%</span></div>
+          </article>
+
+          <article class="task-card neutral">
+            <div class="task-header">
+              <span class="task-tag">MEDIUM</span>
+              <span class="task-status">Pending</span>
+            </div>
+            <h3>Asset Recovery</h3>
+            <div class="progress"><span style="width: 15%"></span></div>
+            <div class="progress-meta"><span>15%</span></div>
+          </article>
+
+          <article class="task-card active">
+            <div class="task-header">
+              <span class="task-tag">HIGH</span>
+              <span class="task-status success">Active</span>
+            </div>
+            <h3>Cyber Defense Grid</h3>
+            <div class="progress"><span style="width: 80%"></span></div>
+            <div class="progress-meta"><span>80%</span></div>
+          </article>
+        </div>
+
+        <div class="threat-banner" role="alert">
+          <span class="banner-dot"></span>
+          <span>THREAT DETECTED</span>
+        </div>
       </main>
+
+      <footer class="bottom-nav" aria-label="Secondary navigation">
+        <div class="nav-item active">
+          <span class="nav-icon">⌁</span>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">◌</span>
+          <span>Feed</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">▣</span>
+          <span>Brief</span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
