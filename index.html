@@ -78,45 +78,57 @@
         </div>
 
         <div class="task-grid" aria-label="Operations overview">
-          <article class="task-card critical">
-            <div class="task-header">
-              <span class="task-tag">CRITICAL</span>
-              <span class="task-status">In Progress</span>
-            </div>
-            <h3>Operation Nightfall</h3>
-            <div class="progress"><span style="width: 65%"></span></div>
-            <div class="progress-meta"><span>65%</span></div>
-          </article>
+          <div class="task-item">
+            <input class="task-radio" type="radio" name="task" id="task-nightfall" checked />
+            <label class="task-card critical" for="task-nightfall" aria-label="Operation Nightfall card">
+              <div class="task-header">
+                <span class="task-tag">CRITICAL</span>
+                <span class="task-status">In Progress</span>
+              </div>
+              <h3>Operation Nightfall</h3>
+              <div class="progress"><span style="width: 65%"></span></div>
+              <div class="progress-meta"><span>65%</span></div>
+            </label>
+          </div>
 
-          <article class="task-card warning">
-            <div class="task-header">
-              <span class="task-tag">HIGH</span>
-              <span class="task-status">Analyzing</span>
-            </div>
-            <h3>Signal Intercept Alpha</h3>
-            <div class="progress"><span style="width: 40%"></span></div>
-            <div class="progress-meta"><span>40%</span></div>
-          </article>
+          <div class="task-item">
+            <input class="task-radio" type="radio" name="task" id="task-alpha" />
+            <label class="task-card warning" for="task-alpha" aria-label="Signal Intercept Alpha card">
+              <div class="task-header">
+                <span class="task-tag">HIGH</span>
+                <span class="task-status">Analyzing</span>
+              </div>
+              <h3>Signal Intercept Alpha</h3>
+              <div class="progress"><span style="width: 40%"></span></div>
+              <div class="progress-meta"><span>40%</span></div>
+            </label>
+          </div>
 
-          <article class="task-card neutral">
-            <div class="task-header">
-              <span class="task-tag">MEDIUM</span>
-              <span class="task-status">Pending</span>
-            </div>
-            <h3>Asset Recovery</h3>
-            <div class="progress"><span style="width: 15%"></span></div>
-            <div class="progress-meta"><span>15%</span></div>
-          </article>
+          <div class="task-item">
+            <input class="task-radio" type="radio" name="task" id="task-recovery" />
+            <label class="task-card neutral" for="task-recovery" aria-label="Asset Recovery card">
+              <div class="task-header">
+                <span class="task-tag">MEDIUM</span>
+                <span class="task-status">Pending</span>
+              </div>
+              <h3>Asset Recovery</h3>
+              <div class="progress"><span style="width: 15%"></span></div>
+              <div class="progress-meta"><span>15%</span></div>
+            </label>
+          </div>
 
-          <article class="task-card active">
-            <div class="task-header">
-              <span class="task-tag">HIGH</span>
-              <span class="task-status success">Active</span>
-            </div>
-            <h3>Cyber Defense Grid</h3>
-            <div class="progress"><span style="width: 80%"></span></div>
-            <div class="progress-meta"><span>80%</span></div>
-          </article>
+          <div class="task-item">
+            <input class="task-radio" type="radio" name="task" id="task-grid" />
+            <label class="task-card active" for="task-grid" aria-label="Cyber Defense Grid card">
+              <div class="task-header">
+                <span class="task-tag">HIGH</span>
+                <span class="task-status success">Active</span>
+              </div>
+              <h3>Cyber Defense Grid</h3>
+              <div class="progress"><span style="width: 80%"></span></div>
+              <div class="progress-meta"><span>80%</span></div>
+            </label>
+          </div>
         </div>
 
         <div class="threat-banner" role="alert">
@@ -140,5 +152,6 @@
         </div>
       </footer>
     </div>
+
   </body>
 </html>
