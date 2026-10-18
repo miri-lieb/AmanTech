@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <div class='radar'>
-  <div class='sweep'></div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigint Ops</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Brand icon">
+          <div class="brand-icon"></div>
+        </div>
+
+        <div class="title">SIGINT OPS</div>
+
+        <div class="status-pill" aria-label="Secure online status">
+          <span class="status-dot"></span>
+          <span>SECURE • ONLINE</span>
+        </div>
+      </header>
+
+      <main class="workspace-panel">
+        <div class="brand-icon">
+          <div class="radar-wrap">
+            <div class="radar">
+              <div class="radar-glow"></div>
+              <div class="sweep"></div>
+              <div class="crosshair crosshair-vertical"></div>
+              <div class="crosshair crosshair-horizontal"></div>
+              <div class="signal signal-1"></div>
+              <div class="signal signal-2"></div>
+              <div class="signal signal-3"></div>
+              <div class="signal signal-4"></div>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="metric">
+              <div class="value">24</div>
+              <div class="label">ACTIVE SIGNALS</div>
+            </div>
+            <div class="metric">
+              <div class="value secondary">07</div>
+              <div class="label">PRIORITY ALERTS</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
